@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/outline_arrow_back_ios_new_24" />
+
+        <!-- Profile Circle -->
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/circle_white"
+            android:gravity="center"
+            android:text="IS"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="internshala"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- Video Icon (Optional) -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_camera" />
+    </LinearLayout>
+
+    <!-- Chat Messages -->
+    <ScrollView
+        android:id="@+id/chat_area"
+        android:layout_below="@id/header"
+        android:layout_above="@+id/message_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="false"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Example Chat Bubble -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/brown"
+                android:text="Hello"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_gravity="end"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Message Bar -->
+    <LinearLayout
+        android:id="@+id/message_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <!-- Attachment Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_camera" />
+
+        <!-- Message Input -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:hint="Message..."
+            android:textSize="16sp" />
+
+        <!-- Send Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+</RelativeLayout>

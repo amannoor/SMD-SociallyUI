@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Search Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@android:drawable/edit_text">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:paddingStart="40dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <!-- Top Tabs (Top | Accounts | Tags | Places) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accounts"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tags"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Places"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Recommendations (e.g., while typing “internshala”) -->
+    <!-- Simulated Result 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Icon/Profile -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Texts -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="internshala"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Website"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Simulated Result 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="internshala_jobs"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Internship Platform"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
